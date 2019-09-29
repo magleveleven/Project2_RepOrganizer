@@ -1,0 +1,49 @@
+.jumbotron {
+    background-color: royalblue;
+    font-family: 'Roboto Mono';
+  }
+  
+  .btn {
+    margin: 5px;
+  }
+  
+  .btnRepoTags:hover {
+    border: black 1px solid;
+  }
+  
+  #tags {
+    margin-bottom: 10px;
+  }
+  
+  .tag:hover {
+    border: black 1px solid;
+  }
+  
+  
+  /* Centering with flex */
+  .card-columns,
+  #popTags {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+  
+  /* Make the popover content div initially hidden */
+  #popTags {
+    visibility: hidden;
+  }
+  
+  /* Mobile First */
+  #jumboTitle {
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  /* Small devices (portrait tablets and large phones, 600px and up) */
+  @media only screen and (min-width: 768px) {
+    #jumboTitle {
+      font-size: 52px;
+      font-weight: bold;
+    }
+  }

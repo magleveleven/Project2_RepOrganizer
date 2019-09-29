@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+
+  <!-- Google Fonts -->
+  <link href='https://fonts.googleapis.com/css?family=Roboto Mono' rel='stylesheet'>
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/styles.css?ver1.1" />
+
+  <title>RepOrganizer</title>
+</head>
+
+<body>
+  <div class="container">
+    <div class="jumbotron">
+      <h1 id="jumboTitle" class="display-4"><img src="images/tag.png"> RepOrganizer</h1>
+      <hr class="my-4" />
+      <p>A better way to manage your GitHub repos.</p>
+    </div>
+
+    <!-- Div to display available tags -->
+    <div id="tags"></div>
+
+    <!-- Div to display repo cards -->
+    <div id="results"></div>
+
+    <!-- Div to hold the tags popup -->
+    <div id="popTags"></div>
+
+    <!-- The Modal -->
+    <div class="modal" id="tagModal">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <!-- Modal Header -->
+          <div class="modal-header">
+            <h4 class="modal-title">Modal Heading</h4>
+            <button type="button" class="close" data-dismiss="modal">
+              &times;
+            </button>
+          </div>
+
+          <!-- Modal body -->
+          <div class="modal-body">
+            <input type="text" id="txtTagName" name="txtTagName" class="form-control"
+              placeholder="Enter New Tag Name" />
+          </div>
+
+          <!-- Modal footer -->
+          <div class="modal-footer">
+            <button id="btnSaveTag" type="button" class="btn btn-success btnSave">
+              Save
+            </button>
+            <button id="btnDelTag" type="button" class="btn btn-danger btnDel">
+              Delete
+            </button>
+            <button id="btnCancelTag" type="button" class="btn btn-warning" data-dismiss="modal">
+              Cancel
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+  </script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+  </script>
+
+  <!-- Moment.js for formatting dates -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+
+  <!-- Custom js file -->
+  <script src="js/view.js"></script>
+</body>
+
+</html>
